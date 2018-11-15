@@ -19,11 +19,13 @@ resource "azurerm_public_ip" "myip"{
   name="table7jkpubip"
   location="${var.location}"
   resource_group_name="${azurerm_resource_group.thegroup.name}"
-  public_ip_address_allocation="dynamic"
+  public_ip_address_allocation="Static"
   tags{
    environment="testing"
   }
 }
-
+output "vm_ip" {
+  value = "${azurerm_public_ip.myip.*.ip_address}"
+}
 
 
