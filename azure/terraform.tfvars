@@ -5,3 +5,4 @@ password="985fcfed-40f6-4b49-b919-b5c811a78deb"
 
 rg="table7jkapprg"
 location="southcentralus"
+sec_group_name="table7jksecgroup"

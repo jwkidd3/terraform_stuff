@@ -10,6 +10,3 @@ resource "azurerm_resource_group" "thegroup"{
  location="${var.location}"
 }
 
-output "bubba"{
-  value="${azurerm_resource_group.thegroup.name}"
-}
